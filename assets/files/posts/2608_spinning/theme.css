@@ -51,13 +51,15 @@
 .reveal table td{padding:.3em .6em;border-bottom:1px solid var(--hair-soft,#E6E0D3);color:var(--ink)}
 .reveal table tr:last-child td{border-bottom:none}
 
-/* full inventory: ::: {.inv}  → 3-column readable glossary (CSS grid)
-   grid (not multicol) so the column layout is deterministic; minmax(0,1fr)
-   keeps long IPA lines from blowing the columns out horizontally. */
-.reveal .inv{font-size:.62em;line-height:1.5;margin-top:.4em}
+/* full inventory: ::: {.inv}  → 2-column readable glossary (CSS grid)
+   2 cols (not 3) so English+IPA+中文 fit on one line; halving the columns
+   also halves the row count, so even the longest list (26 words = 13 rows)
+   fits a single slide. grid (not multicol) keeps the layout deterministic;
+   minmax(0,1fr) stops long IPA lines from blowing the columns out. */
+.reveal .inv{font-size:.56em;line-height:1.5;margin-top:.4em}
 .reveal .inv ul{
-  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
-  column-gap:1.4em;row-gap:.18em;margin:0;padding:0;list-style:none;
+  display:grid;grid-template-columns:repeat(2,minmax(0,1fr));
+  column-gap:2em;row-gap:.18em;margin:0;padding:0;list-style:none;
 }
 .reveal .inv li{margin:0}
 .reveal .inv strong{color:var(--accent);font-weight:700;font-family:var(--r-code-font)}
