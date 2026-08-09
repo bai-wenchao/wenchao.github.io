@@ -433,18 +433,6 @@ Claude 把自己的名字当动词用——"作为 Claude 在干活"。整个词
 | [Discombobulating]{.verb} | 美国俚语 (19c) | 纯为好玩造的词，英语里根本没有 combobulate 这个"正根" |
 | [Whatchamacalliting]{.verb} | 口语 | whatchamacallit（"那个啥来着"）硬动词化——连词都记不清了还在转 |
 
-# 完整性确认
-
-本副牌与原始词表逐一比对（可在构建时用 `make verify` 自动复核）：
-
-| 项目 | 数量 |
-|:---|---:|
-| 原始词表 | 187 |
-| 已收录（去重） | 187 |
-| 遗漏 / 多余 / 重复 | 0 / 0 / 0 |
-
-> ✅ 你提供的每一个 spinning verb 都已收录（187 / 187）。
-
 # 下一个动词会是什么？
 
 Spinner 的精髓在于：你永远猜不到下一秒是 `Photosynthesizing` 还是 `Whatchamacalliting`。
