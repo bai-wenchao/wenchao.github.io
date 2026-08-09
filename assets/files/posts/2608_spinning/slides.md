@@ -2,7 +2,7 @@
 title: "旋转动词杂谈"
 subtitle: "聊聊 Claude Code 命令行加载动画里的 187 个动词"
 author: "白文超"
-date: "2026 年 8 月"
+date: "2026.08"
 subject: "Claude Code CLI spinner verbs"
 ---
 
