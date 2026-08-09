@@ -419,13 +419,13 @@ font-size:.5em;line-height:1.6;padding:.5em 1em;margin:1em 0;border-radius:0 .3e
 .reveal table td{padding:.3em .6em;border-bottom:1px solid var(--hair-soft,#E6E0D3);color:var(--ink)}
 .reveal table tr:last-child td{border-bottom:none}
 
-.reveal .inv{
-font-family:var(--r-code-font);font-size:.40em;line-height:1.35;
-column-count:2;column-gap:1.8em;margin-top:.5em;
+.reveal .inv{font-size:.62em;line-height:1.5;margin-top:.4em}
+.reveal .inv ul{
+display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+column-gap:1.4em;row-gap:.18em;margin:0;padding:0;list-style:none;
 }
-.reveal .inv ul{margin:0;padding-left:1.3em;list-style:none}
-.reveal .inv li{break-inside:avoid;margin:.12em 0}
-.reveal .inv strong{color:var(--accent);font-weight:600}
+.reveal .inv li{margin:0}
+.reveal .inv strong{color:var(--accent);font-weight:700;font-family:var(--r-code-font)}
 
 .reveal section>h1:first-child,
 .reveal section>h2:first-child{position:relative;padding-bottom:.15em}

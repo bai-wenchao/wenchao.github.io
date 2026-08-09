@@ -5,9 +5,9 @@
       "authors": "<strong>Wenchao Bai</strong>",
       "title": "A Field Guide to Claude Code's Spinner Verbs",
       "date": "August 9, 2026",
-      "abstract": "These interactive slides explore the rotating \"spinner verbs\" displayed by Claude Code's CLI while it works — a curated list of 187 words cycling through the loading animation, from the earnest (Pondering, Computing) to the absurd (Flibbertigibbeting, Prestidigitating). The deck organizes the full inventory into 12 thematic categories — Cognition, Culinary, Science, Magic, Whimsy, Easter Eggs, and more — each with IPA pronunciation, Chinese glosses, and etymological notes for the most memorable entries (Clauding, Reticulating splines, Quantumizing). Built with reveal.js, it supports section / subsection navigation, keyboard shortcuts (n / p / arrows / ? / Esc), and one-click PDF export. A built-in completeness check confirms all 187 source verbs are accounted for.",
+      "abstract": "These interactive slides explore the rotating \"spinner verbs\" displayed by Claude Code's CLI while it works — a curated list of 187 words cycling through the loading animation, from the earnest (Pondering, Computing) to the absurd (Flibbertigibbeting, Prestidigitating). The deck organizes the full inventory into 12 thematic categories — Cognition, Culinary, Science, Magic, Whimsy, Easter Eggs, and more — each with IPA pronunciation, Chinese glosses, and etymological notes for the most memorable entries (Clauding, Reticulating splines, Quantumizing).",
       "category": "Developer Culture",
-      "tags": ["Claude Code", "Spinner Verbs", "reveal.js"],
+      "tags": ["Claude Code", "Spinner Verbs"],
       "links": [
         {"text": "Slides", "url": "/assets/files/posts/2608_spinning/index.html"},
         {"text": "PDF", "url": "/assets/files/posts/2608_spinning/index.html?print-pdf"}
