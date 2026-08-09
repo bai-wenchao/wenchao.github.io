@@ -1,8 +1,8 @@
 ---
-title: "旋转动词图鉴"
-subtitle: "A Field Guide to Spinner Verbs"
-author: "Wenchao Bai"
-date: "August 2026"
+title: "旋转动词杂谈"
+subtitle: "聊聊 Claude Code 命令行加载动画里的 187 个动词"
+author: "白文超"
+date: "2026 年 8 月"
 subject: "Claude Code CLI spinner verbs"
 ---
 
@@ -437,4 +437,5 @@ Claude 把自己的名字当动词用——"作为 Claude 在干活"。整个词
 
 Spinner 的精髓在于：你永远猜不到下一秒是 `Photosynthesizing` 还是 `Whatchamacalliting`。
 
-> 按 `Esc` 查看全部幻灯片总览；地址栏加 `?print-pdf` 可导出 PDF。
+> 按 `Esc` 查看全部幻灯片总览；
+> 地址栏 `index.html` 后加 `?print-pdf` 可转为打印布局，随后通过 `Ctrl/Cmd + P` 可导出为 PDF。

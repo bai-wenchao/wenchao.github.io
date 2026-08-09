@@ -12,3 +12,6 @@
 *.nav
 *.snm
 *.synctex
+# shared build-time reveal.js cache — fetched locally by fetch-revealjs.sh,
+# never committed; inlined into each post's index.html at build time.
+/assets/files/posts/_shared/
