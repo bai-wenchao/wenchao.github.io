@@ -1,0 +1,71 @@
+/* ════════════════════════════════════════════════════════════════
+   旋转动词图鉴 · field-guide theme for pandoc → reveal.js
+   暖纸（paper）· 墨（ink）· 琥珀（amber）· 等宽（mono）
+   ════════════════════════════════════════════════════════════════ */
+
+:root{
+  --r-background-color:#ECE8DF;
+  --r-main-font:ui-serif,"Iowan Old Style",Baskerville,Georgia,"Times New Roman",serif;
+  --r-main-color:#23202B;
+  --r-heading-font:ui-serif,Baskerville,Georgia,serif;
+  --r-heading-color:#23202B;
+  --r-heading-text-transform:none;
+  --r-heading-letter-spacing:0;
+  --r-link-color:#B8741F;
+  --r-link-color-hover:#8A5512;
+  --r-code-font:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+  --r-blockquote-border-color:#B8741F;
+  --r-selection-background-color:#E8D4B8;
+  --ink:#23202B; --muted:#6B6470; --faint:#8A8392; --hair:#D8D2C6; --accent:#B8741F;
+}
+
+.reveal{font-weight:400}
+.reveal h1,.reveal h2,.reveal h3,.reveal h4{text-transform:none;letter-spacing:0;font-weight:700}
+.reveal h1{font-size:1.7em;line-height:1.1}
+.reveal h2{font-size:1.2em;color:var(--ink)}
+.reveal section{text-align:left}
+.reveal p,.reveal li{line-height:1.5}
+
+/* cover slide — pandoc gives it id="title-slide"; every level-1 section
+   also carries class="title-slide", so target the cover by id only */
+.reveal #title-slide h1{font-size:2.0em;margin-bottom:.2em}
+.reveal #title-slide .subtitle{font-style:italic;color:var(--muted);font-size:.55em;display:block;margin:.2em 0 .6em}
+.reveal #title-slide .author,.reveal #title-slide .date{color:var(--muted);font-size:.5em}
+
+/* inline styles produced by pandoc bracketed spans: [x]{.verb} / [x]{.ipa} */
+.reveal .verb{font-family:var(--r-code-font);color:var(--accent);font-weight:600}
+.reveal .ipa{font-style:italic;color:var(--muted)}
+
+/* inline code (backticks) — used for the braille dots & verb names in prose */
+.reveal code{font-family:var(--r-code-font);color:var(--accent);background:rgba(184,116,31,.08);padding:.05em .25em;border-radius:.2em;font-size:.85em}
+
+/* blockquote = the key hints / takeaways */
+.reveal blockquote{
+  border-left:3px solid var(--accent);background:#F6F3EC;color:var(--muted);
+  font-size:.5em;line-height:1.6;padding:.5em 1em;margin:1em 0;border-radius:0 .3em .3em 0;
+}
+
+/* tables (overview, etymology, completeness) */
+.reveal table{margin:.6em 0;font-size:.46em;width:100%;border-collapse:collapse}
+.reveal table th{font-family:var(--r-code-font);font-size:.9em;color:var(--accent);border-bottom:2px solid var(--hair);padding:.35em .6em;text-align:left}
+.reveal table td{padding:.3em .6em;border-bottom:1px solid var(--hair-soft,#E6E0D3);color:var(--ink)}
+.reveal table tr:last-child td{border-bottom:none}
+
+/* full inventory: ::: {.inv}  → two-column dense monospace list */
+.reveal .inv{
+  font-family:var(--r-code-font);font-size:.40em;line-height:1.35;
+  column-count:2;column-gap:1.8em;margin-top:.5em;
+}
+.reveal .inv ul{margin:0;padding-left:1.3em;list-style:none}
+.reveal .inv li{break-inside:avoid;margin:.12em 0}
+.reveal .inv strong{color:var(--accent);font-weight:600}
+
+/* section heading underline accent */
+.reveal section>h1:first-child,
+.reveal section>h2:first-child{position:relative;padding-bottom:.15em}
+.reveal section>h1:first-child::after{
+  content:"";display:block;width:2.2em;height:3px;background:var(--accent);margin-top:.18em;border-radius:2px;
+}
+
+/* controls / progress accent */
+.reveal .progress span,.reveal .controls{color:var(--accent)}
