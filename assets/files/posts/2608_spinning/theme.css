@@ -73,3 +73,43 @@
 
 /* controls / progress accent */
 .reveal .progress span,.reveal .controls{color:var(--accent)}
+
+/* keyboard-shortcuts overlay (shift+?) — two things wrong with reveal's
+   defaults: (1) the overlay is near-black yet the table cells carry no text
+   color, so they inherited the theme's dark --ink and vanished on the backdrop;
+   (2) it's sized at 16px / 14px-padding rows + an 80px bottom pad, so the ~20
+   shortcut rows overflow the viewport. Match this light paper deck instead — a
+   paper card on a soft ink scrim, ink text, amber header — and tighten the rows
+   to ~13px so the whole list still fits one screen. Scoped under .overlay.overlay-help
+   (beats the generic .reveal table rules above), so slide tables are untouched. */
+.reveal .overlay.overlay-help{background:rgba(35,32,43,.45)}
+.reveal .overlay.overlay-help .viewport{
+  display:flex;align-items:safe center;justify-content:center;padding-bottom:20px;
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner{
+  width:min(550px,94%);margin:auto;padding:0 0 14px;text-align:left;
+  font-family:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  line-height:1.6;
+  background:var(--r-background-color);border:1px solid var(--hair);
+  border-radius:.3em;box-shadow:0 12px 40px rgba(35,32,43,.3);
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner br{display:none}
+.reveal .overlay.overlay-help .viewport .viewport-inner .title{
+  color:var(--ink);font-size:15px;font-weight:700;text-align:center;
+  margin:0;padding:8px 18px 8px;
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner table{
+  width:100%;border:none;border-collapse:collapse;font-size:13px;margin:0;
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner table th{
+  color:var(--accent);font-family:var(--r-code-font);font-size:10px;line-height:1.2;
+  text-transform:uppercase;letter-spacing:.06em;font-weight:700;
+  padding:0px 9px 0px 13px;border-bottom:1px solid var(--hair);text-align:left;
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner table td{
+  color:var(--ink);padding:4px 18px 4px 26px;border:none;vertical-align:middle;
+}
+.reveal .overlay.overlay-help .viewport .viewport-inner table td:first-child{
+  font-family:var(--r-code-font);font-size:12px;color:var(--accent);
+  white-space:nowrap;padding-right:12px;
+}
